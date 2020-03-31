@@ -67,6 +67,16 @@ body {
     color: gray;
     
 }
+.box3{
+    float: right;
+    margin-right: 25%;
+    border: 2px solid black;
+    color:black;
+    width: 1000px;
+    height: 200px;
+    margin-bottom: 5px;
+
+}
 
 
 
@@ -112,4 +122,9 @@ nav{
         margin-top: 500px;
         text-align: center;
         background-color: grey;
+    }
+.picture{
+    position: relative;
+    text-align: center;
+    color: white;
     }
