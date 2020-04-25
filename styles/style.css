@@ -93,7 +93,7 @@ body {
         position: relative;
         width: 100vw;
         height: 40vh;
-        background-image: url(https://raw.githubusercontent.com/s00188372/WebsiteProject/master/images/airplane.png);
+        background-image: url(images/airplane.png);
         position:relative;
         background-position:center;
         background-size:cover;
