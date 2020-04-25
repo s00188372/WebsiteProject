@@ -18,6 +18,9 @@
     <video autoplay muted loop id="bgVideo">
         <source src="images/shortvideo.mp4" type="video/mp4">
     </video>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
+
     <section class="flexbox-container">
         <section class="topnav">           
             <section class="logo"><img src="images/Logo.png" alt="logo"></section>
@@ -46,36 +49,81 @@
             <h5>Our Training experiences are the perfect challenge.</h5>
             <a href="default.asp">Visit here to find out more</a>
         </section>
+        <section class="mainpagetext">
 
-        <section class="box1">
-            <h3>About Us</h3>
-            <ul id="box1text">
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
+            <section class ="mainpagelefttext1">
+            <a class = "mainpagetext1">Message</a>
+            <p>We are Aityfy, our Head offcie is located in Sligo, we are Ireland's leading flight sumulator provider for Airline Pilots operating an Airbus A320 and Boeing 737 Simulator.Simulation offering training support to both qualified, trainee pilots and the public. We are planning to expand our flight simulators in the future.</p>
 
-                </ul>
+            <p>We have heavily invested into our Airbus and Beoing training simulators which meet ESEA FNPT II standards.We have full ECAM malfunction system that induces the same failures as that of a Full motion Level D Simulator.Our Simulators can also emmulate smoke in cockpit for smoke removal training.</p>
 
+            <p>Our Simulators have adjustable seats, tray tables, map reading lights, Dual linked rudder pedals, Ipads with Charts, an instructor station with touch screen and two further observer jumpseats. We also provide smoke in the cockpit simulation with breathing masks. Headsets are available to use and pilots are welcome to use their own.</p>
+            </section>
+
+            <section class ="mainpagelefttext2">
+                <a class = "mainpagetext2">Call Us</a>
+                <p>+353 (0)87 123 4567</p>
+                <a class = "mainpagetext2">Email</a>
+                <p>support@airyfy.ie</p>
+                <a class = "mainpagetext2">Airyfy</a>
+                <p>
+                    Hanger 1<br>
+                    Sligo Airfield<br>
+                    Killaspugbrone<br>
+                    Strandhill<br>
+                    Co. Sligo<br>
+                    Rep. Ireland</p>
+
+
+        
+            </section>
         </section>
-        <section class="box2">
-            <h3>Why Us</h3>
-            <ul id="box2text">
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-                <li>Sample</li>
-            </ul>
+
+        <section class="Assessmentimg"></section>
+
+        <section class ="bottompart">
+            <section class = "bottompicture">
+
+            </section>
+
+            <section class = "bottomtext">
+                <h3>Class-leading Flight Training</h3>
+                <p>Our one to one and professional approach will give you all the information and skills you need to progress your career as a professional pilot. We have an enviable track record of success in our Airline Simulator Assessment Preparation Course with 80% of our candidates being offered a job with an airline.</p>
+
+                <p>We are here 345 Days a year, 7 days a week and 24hrs a day, so we’ll always have time for you, even at the shortest of notice.</p>
+
+                <p>We are also committed to providing a courteous, efficient and affordable solution to Flight Simulator Pilot Training.</p>
+
+            </section>
         </section>
+
+
     </section>
     <footer>
        <p>Copright 2020 Illia Shakin</p>     
     </footer>  
+<script>
+    //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
 </body>
 </html>
