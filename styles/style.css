@@ -1,130 +1,133 @@
 body { 
     background-color: white;
-    font-family: Verdana, Tahoma, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin:0;
 }
 
-
-.mainvideo {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  .textCenter{
+#bgVideo {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-  }
-
-.box1{
-    float: left;
-    margin-left: 25%;
-    border: 2px solid black;
-    color:black;
-    width: 300px;
-    height: 400px;
-    margin-bottom: 5px;
-
+    right: 0;
+    top: 0;
+    min-width: 100%;
+    min-height: 1080px;
+    z-index: -1;
 }
-
-.box1 h3{
-
-    font-size: 35px;
-    margin-left: 10px;
-}
-
-.box1 ul{
-    list-style-type: none;
-    text-decoration: none;
-    color: gray;
-    
-}
-
-.box2{
-    float: right;
-    margin-right: 25%;
-    border: 2px solid black;
-    color:black;
-    width: 300px;
-    height: 400px;
-    margin-bottom: 5px;
-
-}
-
-.box2 h3{
-
-    font-size: 35px;
-    margin-left: 10px;
-}
-
-.box2 ul{
-    list-style-type: none;
-    text-decoration: none;
-    color: gray;
-    
-}
-.box3{
-    float: right;
-    margin-right: 25%;
-    border: 2px solid black;
-    color:black;
-    width: 1000px;
-    height: 200px;
-    margin-bottom: 5px;
-
-}
-
-
-
-
-
-
-
-
-nav{
-    background-color: #333;
-    margin: 0px;
-
-    
-    }
-
-
-    nav ul{
-        list-style-type: none;
-
-        margin: 0px;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-    nav ul li{
-        list-style-type: none;
-        display: inline;
-
-        padding: 10px;
-        margin: 0px;
-
-
-    }
-    nav ul li a{
-        color: white;
-        text-decoration: none;
-
-    }
-
-
-    footer {
-        position: relative;
-        margin-top: 500px;
-        text-align: center;
-        background-color: grey;
-    }
-.picture{
+.flexbox-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid red;
     position: relative;
-    text-align: center;
-    color: white;
+}
+.topnav {
+    display: flex;
+    justify-content: space-evenly;
+}
+    .topnav ul {
+        display: flex;
+        justify-content: end;
+        list-style-type: none;
     }
+    .topnav li {
+        width: 100px;
+        text-align: center;
+        height: 40px;
+    }
+    .topnav a {
+        font-size: 16px;
+        color: #eeecec;
+        text-decoration: none;
+    }
+    .topnav a:hover {
+        text-decoration: underline;
+    }
+
+    .topnav img {
+        height: 100px;
+    }
+    .topnav li:hover .dropdown > li{
+       
+        display: block;
+        top:0px;
+    }
+    .dropdown ul li{
+
+        display: none;
+        position: relative;
+    }
+    .dropdown {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .dropdown li {
+        line-height: 50px;
+        display: none;
+    }
+    .dropdown ul li:hover{
+        display: block;
+    }
+    .textCenter{
+        padding-top: 200px;
+        height: 774px;
+    }
+    .textCenter h1{
+        font-size: 60px;
+        color:white;
+        text-align: center;
+        margin: 0px;
+    }
+    .textCenter h2{
+        font-size: 55px;
+        color:white;
+        text-align: center;
+        margin-top: 5px;
+
+    }
+    .airplanebg{
+    
+
+        color: white;
+        position: relative;
+        width: 100vw;
+        height: 40vh;
+        background-image: url(file:///C:/Users/xxill/OneDrive/Desktop/airplane.png);
+        position:relative;
+        background-position:center;
+        background-size:cover;
+        background-repeat:no-repeat;
+    
+        background-attachment:fixed;
+        align-content: center;
+
+ 
+    }
+    
+.airplanebg h3{
+    padding-left: 50px;
+    font-size: 50px;
+
+}
+.airplanebg h4{
+    padding-left: 50px;
+    font-size: 20px;
+}
+.airplanebg h5{
+    padding-left: 50px;
+    font-size: 20px;
+}
+.airplanebg a{
+    margin-left: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgb(13, 3, 81);
+    border-radius: 5px;
+    padding: 4px;
+}
+.airplanebg a:hover{
+    background-color: rgb(13, 3, 81);
+
+}
