@@ -1,22 +1,24 @@
 <!DOCTYPE HTML>
 <!-- The following lines are connects
      Author :             Illia Shakin
-     Date Created :       30/1/2020
+     Date Created :       19/04/2020
      Page Description : Home page for my Website
                                  -->
 
 <html lang="en">  <!-- Declaring the primary language for each Web Page-->
 <head>
     <meta charset="utf-8"/>   <!--8-bit character encoding capable of encoding all possible characters--> 
-    <meta name="Flying" content="">
-    <meta name="School" content ="">
-    <meta name="lessons" content ="">
-    <title>Flight School</title>
+    <meta name="keywords" content="flying,PPL,CTPL,Simulator,A320,B737">
+    <meta name="description" content ="flight academy and flight simulators">
+    <meta name="author" content ="illia shakin,airify">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airyfy | Flight School</title>
     <link rel="stylesheet" type ="text/css" href="styles/style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Patua+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/Logo.png"/>
 <body> <!-- Body Tag start of body section display on screen -->
     <video autoplay muted loop id="bgVideo">
-        <source src="images/shortvideo.mp4" type="video/mp4">
+        <source src="file:///K:/Web%20Design%20Fundamentals/MyWebsite/shortvideo.mp4" type="video/mp4">
     </video>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">&#x2191;</button>
@@ -27,27 +29,30 @@
             <nav>
                 <ul>
                     <li class="active" ><a href="">Home</a></li>
-                    <li><a href="page2.html">Info</a></li>
+                    <li><a href="page2.html">About Us</a></li>
                     <li><a href="page3.html">Simulator</a>
 
                         <ul class="dropdown">
-                            <li><a href="page3.html">Airbus 320 </a>
-                            <li><a href="page3.html">Boeing 737 </a>
+                            <li><a href="airbus.html">Airbus 320 </a>
+                            <li><a href="boeing.html">Boeing 737 </a>
                         </ul>
                     </li>
-                    <li><a href="">Try it!</a></li>
+                    <li><a href="contact.html">Help & Book</a></li>
                 </ul>
             </nav>
         </section>
-        <section class="textCenter"><h1>Welcome To The Place</h1>
+        <section class="textCenter">
+            <h1>Welcome To The Place</h1>
             <h2>Where it all Begins!</h2>
+            <h3>Airyfy - Leading Flight Academy and Simulator experience</h3>
+            <p><strong>Attention</strong> - We have currently suspended all bookings and operation due to Covid-19. All previous bookings will get a 6 month extention period, feel free to contact us. More information <a href="https://www.gov.ie/en/news/7e0924-latest-updates-on-covid-19-coronavirus/" target="_blank">here</a></p>
         </section>
 
         <section class="airplanebg">
             <h3>Leading Training facilities for future pilots</h3>
             <h4>Are you interested in a career as a pilot? always wanted to handle a big jet?</h4>
             <h5>Our Training experiences are the perfect challenge.</h5>
-            <a href="default.asp">Visit here to find out more</a>
+            <a href="contact.html#timeline">Visit here to find out more</a>
         </section>
         <section class="mainpagetext">
 
@@ -100,7 +105,26 @@
 
     </section>
     <footer>
-       <p>Copright 2020 Illia Shakin</p>     
+        <section class="topnav10">           
+            <section class="logo10"><img src="images/Logo.png" alt="logo"></section>
+            <nav>
+                <ul>
+                    <li class="active" ><a href="">Home</a></li>
+                    <li><a href="page2.html">About Us</a></li>
+                    <li><a href="page3.html">Simulator</a>
+
+                        <ul class="dropdown">
+                            <li><a href="airbus.html">Airbus 320 </a>
+                            <li><a href="boeing.html">Boeing 737 </a>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Help & Book</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footercopyright">
+       <p>&#169; 2020 Illia Shakin</p>     
+    </section>
     </footer>  
 <script>
     //Get the button:
